@@ -83,6 +83,180 @@ del(df_2['index'])
 df_2
 ```
 
+The two subsets have the following form
+
+- df_1:
+
+|index|zip_code|item_number|bottles_sold|
+|-----|--------|-----------|------------|
+|0    |52556   |86251      |6           |
+|1    |52803   |41844      |3           |
+|2    |51501   |81124      |2           |
+|3    |52761   |82847      |4           |
+|4    |50320   |973627     |120         |
+|5    |50158   |67557      |6           |
+|6    |50703   |168        |180         |
+|7    |51247   |86112      |6           |
+|8    |50702   |100026     |84          |
+|9    |50501   |38176      |108         |
+|10   |50461   |35918      |30          |
+|11   |50588   |84617      |4           |
+|12   |52241   |43034      |1           |
+|13   |51501   |86251      |48          |
+|14   |50314   |48106      |60          |
+|15   |52601   |48099      |24          |
+|16   |50314   |49182      |24          |
+|17   |50707   |15626      |60          |
+|18   |51401   |33717      |4           |
+|19   |50158   |67528      |3           |
+|20   |52314   |75087      |660         |
+|21   |50320   |926577     |66          |
+|22   |50158   |48099      |24          |
+|23   |50314   |905153     |36          |
+|24   |51501   |67524      |7           |
+|25   |52314   |75087      |900         |
+|26   |51534   |84197      |3           |
+|27   |52411   |41846      |36          |
+|28   |52804   |48690      |2           |
+|29   |51106   |86251      |144         |
+|30   |52240   |27102      |18          |
+|31   |50401   |986845     |48          |
+|32   |50314   |56193      |24          |
+|33   |50010   |946574     |288         |
+|34   |52601   |35913      |48          |
+|35   |51106   |67586      |84          |
+|36   |51360   |77487      |48          |
+|37   |50263   |3135       |84          |
+|38   |50266   |250        |90          |
+|39   |50314   |86251      |180         |
+|40   |52405   |84197      |2           |
+|41   |50701   |43031      |4           |
+|42   |52003   |43031      |5           |
+|43   |50131   |38089      |48          |
+|44   |50265   |67526      |72          |
+|45   |50401   |86843      |18          |
+|46   |51246   |82187      |5           |
+|47   |50662   |86739      |8           |
+|48   |52172   |67524      |1           |
+|49   |50320   |77487      |72          |
+|50   |52732   |45248      |24          |
+|51   |50701   |43034      |7           |
+|52   |50703   |43034      |1           |
+|53   |50327   |43040      |102         |
+|54   |51401   |27189      |18          |
+|55   |50317   |56193      |24          |
+|56   |52338   |27357      |90          |
+|57   |52240   |86251      |60          |
+|58   |50022   |86507      |4           |
+|59   |50702   |917914     |18          |
+|60   |51106   |67527      |240         |
+|61   |50703   |48099      |24          |
+|62   |50801   |43037      |5           |
+|63   |51555   |45247      |2           |
+|64   |51401   |43031      |12          |
+|65   |50703   |37880      |24          |
+|66   |52627   |67586      |36          |
+|67   |51501   |43031      |4           |
+|68   |50111   |77805      |108         |
+|69   |50316   |48099      |48          |
+|70   |50702   |77487      |768         |
+|71   |50701   |86112      |2           |
+|72   |52402   |45246      |7           |
+|73   |52136   |35917      |2           |
+|74   |52241   |65750      |48          |
+|75   |52001   |67557      |4           |
+|76   |52402   |86390      |216         |
+|77   |50314   |86251      |60          |
+
+- df_2:
+
+|index|store_name                                |sale_dollars|
+|-----|------------------------------------------|------------|
+|0    |Hy-Vee Food Store / Fairfield             |21.78       |
+|1    |Hilltop Grocery                           |18.9        |
+|2    |Hy-Vee Drugstore / Council Bluffs         |17.82       |
+|3    |Nash Finch / Wholesale Food               |45.72       |
+|4    |Hy-Vee #3 / BDI / Des Moines              |1755.6      |
+|5    |Hy-Vee Food Store / Marshalltown          |75.54       |
+|6    |Hy-Vee Food Store #2 / Waterloo           |1985.4      |
+|7    |Pump N Pak                                |21          |
+|8    |Hy-Vee Food Store #3 / Waterloo           |1448.16     |
+|9    |Hy-Vee Food Store / Fort Dodge            |1563.84     |
+|10   |Osage Payless Foods                       |324         |
+|11   |Hy-Vee Wine and Spirits / Storm Lake      |33          |
+|12   |Bootleggin' Barzini's Fin                 |6.75        |
+|13   |I-80 Liquor / Council Bluffs              |174.24      |
+|14   |Central City 2                            |1709.4      |
+|15   |Burlington Shell                          |206.64      |
+|16   |Shop N Save #1 / Mlk Pkwy                 |116.64      |
+|17   |Fareway Stores #067 / Evansdale           |1349.4      |
+|18   |Fareway Stores #409 / Carroll             |32.52       |
+|19   |Depot Liquor & Grocery                    |112.47      |
+|20   |Wilkie Liquors                            |4870.8      |
+|21   |Hy-Vee #3 / BDI / Des Moines              |1881        |
+|22   |East Side Liquor and Groceries            |206.64      |
+|23   |Central City Liquor, Inc.                 |1078.92     |
+|24   |Speedy Gas N Shop                         |68.18       |
+|25   |Wilkie Liquors                            |6750        |
+|26   |Gameday Liquor                            |27          |
+|27   |Hy-Vee #7 / Cedar Rapids                  |486         |
+|28   |Famous Liquors                            |17.98       |
+|29   |Sam's Club 6432 / Sioux City              |522.72      |
+|30   |Hy-Vee Wine and Spirits / Iowa City       |488.52      |
+|31   |Hy-Vee Food Store #1 / Mason City         |630.24      |
+|32   |Shop N Save #1 / Mlk Pkwy                 |70.56       |
+|33   |Sam's Club 6568 / Ames                    |3913.92     |
+|34   |Quik Stop  /  Burlington                  |81.6        |
+|35   |Sam's Club 6432 / Sioux City              |720.72      |
+|36   |Hy-Vee Wine and Spirits / Spirit Lake     |324.96      |
+|37   |Hy-Vee / Waukee                           |1518.72     |
+|38   |Hy-Vee Wine and Spirits / WDM             |3372.3      |
+|39   |Central City 2                            |653.4       |
+|40   |Smokin' Joe's #7 Tobacco and Liquor Outlet|18          |
+|41   |New Star Liquor / W 4th S / Waterloo      |33.24       |
+|42   |Sid's Beverage Shop                       |41.55       |
+|43   |Hy-Vee Food Store / Johnston              |64.32       |
+|44   |Fareway Stores #153  /  W Des Moines      |1349.28     |
+|45   |Hy-Vee Food Store #1 / Mason City         |270         |
+|46   |Liquor Locker                             |37.5        |
+|47   |Fareway Stores #412 / Oelwein             |105.04      |
+|48   |Double D Liquor Store                     |9.74        |
+|49   |Hy-Vee #3 / BDI / Des Moines              |487.44      |
+|50   |Hy-Vee Food and Drug / Clinton            |282.24      |
+|51   |New Star Liquor / W 4th S / Waterloo      |47.25       |
+|52   |Hy-Vee Food Store #2 / Waterloo           |6.75        |
+|53   |Fareway Stores #138 / Pleasant Hill       |2295        |
+|54   |Hy-Vee Food Store / Carroll               |637.74      |
+|55   |Hy-Vee Wine and Spirits / Hubbell         |70.56       |
+|56   |Cedar Ridge Vineyards                     |3712.5      |
+|57   |Hy-Vee Wine and Spirits / Iowa City       |217.8       |
+|58   |Hy-Vee Wine and Spirits / Atlantic        |23.04       |
+|59   |Hy-Vee Food Store #3 / Waterloo           |807.84      |
+|60   |Sam's Club 6432 / Sioux City              |5397.6      |
+|61   |Ray's Supermarket, Inc.                   |206.64      |
+|62   |Fareway Stores #597 / Creston             |71.25       |
+|63   |Food Land Super Markets                   |13.26       |
+|64   |Hy-Vee Food Store / Carroll               |99.72       |
+|65   |Logan Convenience Store                   |63.36       |
+|66   |Quicker Liquor Store                      |237.24      |
+|67   |Tobacco Hut #14 / Council Bluffs          |33.24       |
+|68   |Fareway Stores #983 / Grimes              |1296        |
+|69   |Tequila's Liquor Store                    |413.28      |
+|70   |Sam's Club 6514 / Waterloo                |5199.36     |
+|71   |Hy-Vee Wine and Spirits / Waterloo        |7           |
+|72   |CVS Pharmacy #8526 / Cedar Rapids         |42          |
+|73   |The Ox & Wren Spirits and Gifts           |75.12       |
+|74   |Hy-Vee Food Store / Coralville            |504         |
+|75   |Iowa Street Market, Inc.                  |50.36       |
+|76   |Sam's Club 8162 / Cedar Rapids            |691.2       |
+|77   |Central City 2                            |217.8       |
+
+### Task 1
+
+
+
+
+
 
 
 
