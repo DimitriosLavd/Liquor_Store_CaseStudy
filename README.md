@@ -381,6 +381,8 @@ fig_2.update_traces(textfont_size=12, textangle=0, textposition="outside", clipo
 ```
 
 
+![image](https://github.com/DimitriosLavd/Liquor_Store_CaseStudy/assets/157892523/1746d255-0a40-44e8-8f83-06ff4ff07099)
+
 
 
 
