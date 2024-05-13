@@ -48,6 +48,19 @@ df = df.loc[(df['date'] >= '2016-01-01')
                      & (df['date'] < '2020-01-01')]
 ```
 
+2. Now, our updated main dataset (df) contains sales that were made during the period from 2016 to 2019. As a next step, we created two separate subsets to use for the two assignment tasks.
+
+   In order to create the first subset (df_1), we used the following code, in order to choose the relevant columns from the main dataset (df):
+
+ ```python
+ # Firstly, we choose the relevant columns for the core dataset
+ df_1 = df[['zip_code','item_number','bottles_sold']]
+ ```
+
+swd
+
+
+
 
 
 
