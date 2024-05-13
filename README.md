@@ -9,4 +9,8 @@ For the timeframe 2016-2019:
 1. Discern the most popular item in each zip code 
 2. Compute the sales percentage per store (in dollars).
 
+### Data Sources
+
+Liquor sales data: The primary dataset used for this analysis is the "finance_liquor_sales.csv", containing detailed information about each sale.  This data set is provided by the Workearly's Machine Learning and AI Bootcamp.
+
 
