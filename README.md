@@ -11,7 +11,11 @@ For the timeframe 2016-2019:
 
 ### Data Sources
 
-Liquor sales data: The primary dataset used for this analysis is the "finance_liquor_sales.csv", containing detailed information about each sale.  This data set is provided by the Workearly's Machine Learning and AI Bootcamp.
+Liquor sales data: The primary dataset used for this analysis is the "finance_liquor_sales.csv", containing detailed information about each sale.  This data set is provided by the Workearly's Machine Learning and AI Bootcamp. We imported the raw dataset as shown below:
+
+```python
+df = pd.read_csv(r"D:\data analysis_2\Case Studies\Liquor_sales\finance_liquor_sales.csv")
+```
 
 ### Tools
 
@@ -34,6 +38,17 @@ import plotly.express as px
 During the first stage of our analysis, we needed to clean and prepare the raw dataset, in order to make it useful for the tasks at hand.  
 
 1. As a first step, we isolated and extracted only the sales that were made during the period from 2016 to 2019. We did it using the following code:
+
+```python
+#transform the date column from str to date format
+df['date']= pd.to_datetime(df['date'])
+
+#include only the years between 2016 and 2019
+df = df.loc[(df['date'] >= '2016-01-01')
+                     & (df['date'] < '2020-01-01')]
+```
+
+
 
 
 
