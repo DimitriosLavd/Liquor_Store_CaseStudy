@@ -341,6 +341,18 @@ The code above produced the following table:
 |74   |52803   |41844      |3           |
 |75   |52804   |48690      |2           |
 
+Then, we used plotly to visualize our results and make them comprehensible. Our visualization code is the following:
+
+``` python
+#plotly graph
+fig_1 = px.scatter(bottles_per_zipcode,x = 'zip_code', y= 'bottles_sold', size = 'bottles_sold',
+                   color = 'zip_code', hover_name = bottles_per_zipcode.index, size_max=40,
+                  labels = {'bottles_sold':'Bottles Sold',
+                             'zip_code':'Zip Code'},title = 'Bottles Sold per Zip Code')
+```
+
+![image](https://github.com/DimitriosLavd/Liquor_Store_CaseStudy/assets/157892523/d8fa1e20-5b49-40e7-a348-a280cab4a357)
+
 
 
 
