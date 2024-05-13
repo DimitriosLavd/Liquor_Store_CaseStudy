@@ -352,7 +352,33 @@ fig_1 = px.scatter(bottles_per_zipcode,x = 'zip_code', y= 'bottles_sold', size =
 ```
 
 ![image](https://github.com/DimitriosLavd/Liquor_Store_CaseStudy/assets/157892523/d8fa1e20-5b49-40e7-a348-a280cab4a357)
+### Task 2
 
+For our second task, we needed to compute the sales percentage per store (in dollars). We used the following code to create the "top_sales" table. We made sure that the table contained the top 16 selling stores and the sales percentage (in dollars) made by each store. We followed the following procedure and wrote the code below to create the table "top_sales" table:
+
+```python
+#we group the dataset by the store name and sum the sales in dollars
+sales_percentage = df_2.groupby(['store_name'],as_index = False)['sale_dollars'].sum()
+#we calculate the total sales in dollars and add the perncentage column to our dataset 
+total_sales = sum(sales_percentage['sale_dollars'])
+#we create the percentage column
+sales_percentage['percentage'] = (sales_percentage['sale_dollars']/total_sales)*100
+#we make sure that the results appear in an descenting order 
+sales_percentage = sales_percentage.sort_values(by=['percentage'], ascending=False)
+sales_percentage.reset_index(inplace = True)
+del(sales_percentage['index'])
+#we find the 15 top selling stores
+top_sales = sales_percentage[:16]
+```
+
+We again used plotly to visualize our results with the following code:
+
+``` python
+fig_2 = px.bar(top_sales[::-1], x='percentage', y='store_name', color='percentage', orientation='h',text_auto='.2s',
+              labels = {'store_name':'Store Name',
+                       'percentage':'%Sales'},title = '%Sales by Store')
+fig_2.update_traces(textfont_size=12, textangle=0, textposition="outside", cliponaxis=False)
+```
 
 
 
