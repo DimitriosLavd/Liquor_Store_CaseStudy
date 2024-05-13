@@ -21,7 +21,19 @@ The whole analysis was executed using Python and an array of relevant Python Lib
 - Numpy
 - Plotly
 
+We imported the relevant libraries as shown in the code below: 
+
+```python
+import pandas as pd
+import numpy as np
+import plotly.express as px
+```
+
 ### Data Cleaning/Preperation
+
+During the first stage of our analysis, we needed to clean and prepare the raw dataset, in order to make it useful for the tasks at hand.  
+
+1. As a first step, we isolated and extracted only the sales that were made during the period from 2016 to 2019. We did it using the following code:
 
 
 
