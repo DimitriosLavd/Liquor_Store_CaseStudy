@@ -37,7 +37,7 @@ import plotly.express as px
 
 During the first stage of our analysis, we needed to clean and prepare the raw dataset, in order to make it useful for the tasks at hand.  
 
-1. As a first step, we isolated and extracted only the sales that were made during the period from 2016 to 2019. We did it using the following code:
+1-As a first step, we isolated and extracted only the sales that were made during the period from 2016 to 2019. We did it using the following code:
 
 ```python
 #transform the date column from str to date format
@@ -48,7 +48,7 @@ df = df.loc[(df['date'] >= '2016-01-01')
                      & (df['date'] < '2020-01-01')]
 ```
 
-2. Now, our updated main dataset (df) contains sales that were made during the period from 2016 to 2019. As a next step, we created two separate subsets to use for the two assignment tasks.
+2-Now, our updated main dataset (df) contains sales that were made during the period from 2016 to 2019. As a next step, we created two separate subsets to use for the two assignment tasks.
 
    In order to create the first subset (df_1), we used the following code, in order to choose the relevant columns from the main dataset (df):
 
@@ -56,8 +56,32 @@ df = df.loc[(df['date'] >= '2016-01-01')
  # Firstly, we choose the relevant columns for the core dataset
  df_1 = df[['zip_code','item_number','bottles_sold']]
  ```
+    
+ After confirming that the columns had the correct format, we used the following code to find and delete any rows that may contain missing values. 
+ 
+ ```python 
+#then we delete any row with missing values and reset the index 
+df_1 = df_1.dropna()
+df_1.reset_index(inplace = True)
+del(df_1['index'])
+```
 
-swd
+We also followed the exactly same two steps, in order to create the subset used for the second task (df_2). We used the following code to choose the relevant columns for the main dataset:
+
+```python
+# Firstly, we choose the relevant columns for the core dataset
+df_2 = df[['store_name','sale_dollars']]
+```
+
+And we deleted any rows that contained missing values:
+
+``` python
+#then we delete any row with missing values and reset the index 
+df_2 = df_2.dropna()
+df_2.reset_index(inplace = True)
+del(df_2['index'])
+df_2
+```
 
 
 
