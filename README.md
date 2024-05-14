@@ -3,7 +3,7 @@ A small case study, where I used Python to analyze liquor store sales data, in o
 
 ## Table of Contents
 
--[Project Overview](project-overview)
+-[Project Overview](#project-overview)
 
 ### Project Overview
 
