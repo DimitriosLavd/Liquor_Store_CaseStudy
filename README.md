@@ -3,13 +3,13 @@ A small case study, where I used Python to analyze liquor store sales data, in o
 
 ## Table of Contents
 
--[Project Overview](#project-overview)
--[Data Sources](#data-sources)
--[Tools](#tools)
--[Data Cleaning and Preperation](#data-cleaning-and-preperation)
--[Task 1](#task-1)
--[Task 2](#task-2)
--[Insights](#insights)
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning and Preperation](#data-cleaning-and-preperation)
+- [Task 1](#task-1)
+- [Task 2](#task-2)
+- [Insights](#insights)
 
 
 ### Project Overview
