@@ -4,6 +4,13 @@ A small case study, where I used Python to analyze liquor store sales data, in o
 ## Table of Contents
 
 -[Project Overview](#project-overview)
+-[Data Sources](#data-sources)
+-[Tools](#tools)
+-[Data Cleaning and Preperation](#data-cleaning-and-preperation)
+-[Task 1](#task-1)
+-[Task 2](#task-2)
+-[Insights](#insights)
+
 
 ### Project Overview
 
@@ -37,7 +44,7 @@ import numpy as np
 import plotly.express as px
 ```
 
-### Data Cleaning/Preperation
+### Data Cleaning and Preperation
 
 During the first stage of our analysis, we needed to clean and prepare the raw dataset, in order to make it useful for the tasks at hand.  
 
