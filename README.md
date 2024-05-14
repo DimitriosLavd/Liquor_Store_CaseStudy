@@ -401,7 +401,14 @@ The previous analysis and the graphs we produced can give us valuable insights, 
 - In the second graph, we can see the top-selling stores. The top seller, in terms of dollars, was the Wilkie Liquors store with the 18 % of the total sales.
 - The 16 top-selling stores, alone, made the 85% of the total sales in dollars from 2016 to 2019
   These are only some key points we can extract from the analysis we did. Further exploring the dataset and the graphs can provide additional information about the liquor sales for the targeted time 
-   period 
+   period
+
+### Refrences 
+
+1. [Workearly Machine Learning & AI Bootcamp](https://academy.workearly.services/course/machine-learning-and-ai-bootcamp)
+2. [Python](https://www.python.org/)
+3. [Pandas](https://pandas.pydata.org/)
+4. [Plotly](https://plotly.com/python/)
 
 
 
