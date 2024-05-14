@@ -10,6 +10,7 @@ A small case study, where I used Python to analyze liquor store sales data, in o
 - [Task 1](#task-1)
 - [Task 2](#task-2)
 - [Insights](#insights)
+- [Refrences](#refrences)
 
 
 ### Project Overview
