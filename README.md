@@ -383,6 +383,14 @@ fig_2.update_traces(textfont_size=12, textangle=0, textposition="outside", clipo
 
 ![image](https://github.com/DimitriosLavd/Liquor_Store_CaseStudy/assets/157892523/1746d255-0a40-44e8-8f83-06ff4ff07099)
 
+### Insights 
+
+The previous analysis and the graphs we produced can give us valuable insights, regarding the liquor sales, for the 2016–2019 period. In this section, we will give some examples.
+- As we can see in the first graph, the most, bottles of a single item that were sold to a single zip code were 1560. The item was the 75087, and it was sold to the area with the zip code 52314
+- In the second graph, we can see the top-selling stores. The top seller, in terms of dollars, was the Wilkie Liquors store with the 18 % of the total sales.
+- The 16 top-selling stores, alone, made the 85% of the total sales in dollars from 2016 to 2019
+  These are only some key points we can extract from the analysis we did. Further exploring the dataset and the graphs can provide additional information about the liquor sales for the targeted time 
+   period 
 
 
 
