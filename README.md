@@ -51,7 +51,7 @@ During the first stage of our analysis, we needed to clean and prepare the raw d
 
 1-As a first step, we isolated and extracted only the sales that were made during the period from 2016 to 2019. We did it using the following code:
 
-```python
+```Python
 #transform the date column from str to date format
 df['date']= pd.to_datetime(df['date'])
 
